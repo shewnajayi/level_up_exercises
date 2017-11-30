@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PMail</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link href="custom.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    </head>
+    <body>
+        <div class="wrapper">
+            <!-- Header -->
+            <div id="header">
+                <div class="page-header">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <h2>PMail</h2>
+                        </div>
+                        <div class="col-md-7">
+                            <input type="text" class="pmail-form-control">
+                            <button class="btn btn-search"><i class="fa fa-search"></i></button>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="right-header-icons pull-right">
+                                <a href="#"><i class="fa fa-bars"></i></a>
+                                <a href="#" class="notification"><i class="fa fa-bell"></i></a>
+                                <a href="#" class="name-icon"><span>A</span>
+                                    <div id="accountInfo">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="profile-image">
+                                                    <h1>A</h1>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <h4>John Doe</h4>
+                                                <span>Johndoe@pmail.com</span>
+                                            </div>
+                                        </div>
+                                        <div id="accountInfoFooter">
+                                            <button class="btn btn-default action-buttons pull-left" type="button">
+                                                View Account
+                                            </button>
+                                            <button class="btn btn-default action-buttons pull-right" type="button">
+                                                Logout
+                                            </button>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="second-page-header">
+                    <div class="row">
+                        <div class="col-md-2" style="margin-top: 10px;">
+                            <span class="title">PMail <i class="fa fa-sort-down"></i></span>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="action-buttons">
+                                <button class="btn btn-default dropdown-toggle action-buttons" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true">
+                                    <input type="checkbox">
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+
+                                <button class="btn btn-default action-buttons" type="button">
+                                    <i class="fa fa-undo"></i>
+                                </button>
+                                <button class="btn btn-default dropdown-toggle action-buttons" type="button" id="moreDropdownMenu" data-toggle="dropdown" aria-haspopup="true">
+                                    More
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="moreDropdownMenu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="">
+                                <div class="right-action-buttons">
+                                    <span class="bold">1-5</span> of <span class="bold">5</span>
+                                    <div class="btn-group" role="group" aria-label="">
+                                        <button type="button" class="btn btn-default"><i class="fa fa-angle-left"></i></button>
+                                        <button type="button" class="btn btn-default"><i class="fa fa-angle-right"></i></button>
+                                    </div>
+                                    <button class="btn btn-default dropdown-toggle action-buttons" type="button" id="moreDropdownMenu" data-toggle="dropdown" aria-haspopup="true">
+                                        <i class="fa fa-cog"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="moreDropdownMenu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <button id="compose" class="btn btn-default" type="button">
+                    COMPOSE
+                </button>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-inbox-tab" data-toggle="pill" href="#v-pills-inbox" role="tab" aria-controls="v-pills-inbox" aria-selected="true">Inbox(11)</a>
+                            <a class="nav-link" id="v-pills-starred-tab" data-toggle="pill" href="#v-pills-starred" role="tab" aria-controls="v-pills-starred" aria-selected="false">Starred</a>
+                            <a class="nav-link" id="v-pills-important-tab" data-toggle="pill" href="#v-pills-important" role="tab" aria-controls="v-pills-important" aria-selected="false">Important</a>
+                            <a class="nav-link" id="v-pills-sent-tab" data-toggle="pill" href="#v-pills-sent" role="tab" aria-controls="v-pills-sent" aria-selected="false">Sent Mail</a>
+                            <a class="nav-link" id="v-pills-drafts-tab" data-toggle="pill" href="#v-pills-drafts" role="tab" aria-controls="v-pills-drafts" aria-selected="false">Drafts</a>
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="tab-content sidebar-tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-inbox" role="tabpanel" aria-labelledby="v-pills-inbox-tab">
+                                <ul class="nav nav-tabs" id="inboxTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="primary-tab" data-toggle="tab" href="#primary" role="tab" aria-controls="primary" aria-selected="true"><i class="fa fa-hdd-o fa-2x"></i> Primary</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="social-tab" data-toggle="tab" href="#social" role="tab" aria-controls="social" aria-selected="false"><i class="fa fa-users fa-2x"></i>  Social</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="promotions-tab" data-toggle="tab" href="#promotions" role="tab" aria-controls="promotions" aria-selected="false"><i class="fa fa-tags fa-2x"></i> Promotions</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="primary" role="tabpanel" aria-labelledby="primary-tab">
+                                        <table class="table table-responsive" id="primary-message-body">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox">
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-tag"></i>
+                                                    </td>
+                                                    <td>
+                                                        <span>Lorem Ipsum</span>
+                                                    </td>
+                                                    <td>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                                                    </td>
+                                                    <td>
+                                                        Nov 17
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox">
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-tag"></i>
+                                                    </td>
+                                                    <td>
+                                                        <span>Lorem Ipsum</span>
+                                                    </td>
+                                                    <td>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                                                    </td>
+                                                    <td>
+                                                        Nov 17
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox">
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-tag"></i>
+                                                    </td>
+                                                    <td>
+                                                        <span>Lorem Ipsum</span>
+                                                    </td>
+                                                    <td>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                                                    </td>
+                                                    <td>
+                                                        Nov 17
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox">
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-tag"></i>
+                                                    </td>
+                                                    <td>
+                                                        <span>Lorem Ipsum</span>
+                                                    </td>
+                                                    <td>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                                                    </td>
+                                                    <td>
+                                                        Nov 17
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox">
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-tag"></i>
+                                                    </td>
+                                                    <td>
+                                                        <span>Lorem Ipsum</span>
+                                                    </td>
+                                                    <td>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                                                    </td>
+                                                    <td>
+                                                        Nov 17
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox">
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-tag"></i>
+                                                    </td>
+                                                    <td>
+                                                        <span>Lorem Ipsum</span>
+                                                    </td>
+                                                    <td>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                                                    </td>
+                                                    <td>
+                                                        Nov 17
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox">
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-tag"></i>
+                                                    </td>
+                                                    <td>
+                                                        <span>Lorem Ipsum</span>
+                                                    </td>
+                                                    <td>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                                                    </td>
+                                                    <td>
+                                                        Nov 17
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox">
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-tag"></i>
+                                                    </td>
+                                                    <td>
+                                                        <span>Lorem Ipsum</span>
+                                                    </td>
+                                                    <td>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                                                    </td>
+                                                    <td>
+                                                        Nov 17
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox">
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-tag"></i>
+                                                    </td>
+                                                    <td>
+                                                        <span>Lorem Ipsum</span>
+                                                    </td>
+                                                    <td>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                                                    </td>
+                                                    <td>
+                                                        Nov 17
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox">
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-tag"></i>
+                                                    </td>
+                                                    <td>
+                                                        <span>Lorem Ipsum</span>
+                                                    </td>
+                                                    <td>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                                                    </td>
+                                                    <td>
+                                                        Nov 17
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox">
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-tag"></i>
+                                                    </td>
+                                                    <td>
+                                                        <span>Lorem Ipsum</span>
+                                                    </td>
+                                                    <td>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                                                    </td>
+                                                    <td>
+                                                        Nov 17
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox">
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-tag"></i>
+                                                    </td>
+                                                    <td>
+                                                        <span>Lorem Ipsum</span>
+                                                    </td>
+                                                    <td>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                                                    </td>
+                                                    <td>
+                                                        Nov 17
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox">
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-star-o"></i>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa fa-tag"></i>
+                                                    </td>
+                                                    <td>
+                                                        <span>Lorem Ipsum</span>
+                                                    </td>
+                                                    <td>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                                                    </td>
+                                                    <td>
+                                                        Nov 17
+                                                    </td>
+                                                    
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--#end of sidebar -->
+            
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    </body>
+</html>
